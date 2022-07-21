@@ -13,11 +13,16 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#book">Booking</a></li>
+                <li><a href="#kontak">Contact</a></li>
                 <li><a href="login.html">Login Admin</a></li>
             </ul>
         </nav>
-        <div class="Home"><h1>Life Is Better When You<br> Have A Good Hairstyle</h1></div>
-        <a name="about"></a>
+        <div class="home">
+          <h1>Life Is Better When You<br> Have A Good Hairstyle</h1>
+          <a class="button-up" href="#book">Book Now</a>
+          <div class="space"></div>
+          <a  name="about"></a>
+        </div>
         <div class="about">
             <h1>About us</h1>
             <p>PAI Barber Shop mengkhususkan diri dalam potongan klasik, Penataan jenggot, pencukuran dengan handuk panas,
@@ -38,36 +43,36 @@
                 <div class="jadwal">
                     <div class="jam">Jam Buka</div>
                     <div class="tabel">
-                        <table border="2">
+                      <table border="2">
                         <tr>
-                            <td>Senin</td>
+                            <td class="hijau">Senin</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Selasa</td>
+                            <td class="hijau">Selasa</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Rabu</td>
+                            <td class="hijau">Rabu</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Kamis</td>
+                            <td class="hijau">Kamis</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Jum'at</td>
+                            <td class="hijau">Jum'at</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Sabtu</td>
+                            <td class="hijau">Sabtu</td>
                             <td>10.00 - 22.00</td>
                         </tr>
                         <tr>
-                            <td>Minggu</td>
+                            <td class="merah">Minggu</td>
                             <td>10.00 - 15.00</td>
                         </tr>
-                        </table></div>
+                      </table></div>
                 </div>
             </div>
             <a name="book"></a>
@@ -158,16 +163,24 @@
                 <div class="formbox">
                   <form name="dataform" method="post" action="proses.php">
                     <div class="text"><b>Nama</b></div>
-                    <div class="lk">
+                    <div>
                         <input class="input1" type="text" name="nama" placeholder=" Nama anda">
                     </div>
-                    <div class="text"><b>Tanggal</b></div>
-                    <div class="lk">
-                        <input class="input1" type="date" name="tanggal">
+                    <div class="text"><b>Nomor Handphone</b></div>
+                    <div>
+                        <input class="input1" type="text" name="nohp">
                     </div>
-                    <div class="text"><b>Jam</b></div>
-                    <div class="lk">
-                        <input class="input1" type="time" name="jam">
+                    <div class="text"><b>Email</b></div>
+                    <div>
+                        <input class="input1" type="text" name="email">
+                    </div>
+                    <div class="row1">
+                      <div><b>Tanggal</b></div>
+                      <div class="t"><b>Jam</b></div>
+                    </div>
+                    <div class="row2">
+                      <div class="l5"><input class="input2" type="date" name="tanggal"></div>
+                      <div class="l6"><input class="input2" type="time" name="jam"></div>
                     </div>
                     <div class="text"><b>Pilihan Layanan</b></div>
                     <div class="check">
@@ -178,18 +191,70 @@
                         <div class="kotak"><input type="checkbox" name="pil5" value="Pewarnaan Rambut">&nbsp Pewarnaan Rambut</div>
                         <div class="kotak"><input type="checkbox" name="pil6" value="Smoothing">&nbsp Smoothing</div>
                     </div>
-                    <div class="text"><b>Email</b></div>
-                    <div class="lk">
-                        <input class="input1" type="text" name="email">
-                    </div>
+                    <hr color="black">
                     <div class="tombol">
-                        <input type="submit" name="Submit" value="Kirim">&emsp;&emsp;
-                        <input type="reset" name="Submit2" value="Batal">
+                        <button type="submit" class="Submit" >Kirim</button>&emsp;&emsp;
+                        <button type="reset" class="Submit2" >Batal</button>
                     </div>
                   </form>
                 </div>
             </div>
         </div>
+        <div class="contact">
+          <p class="f11"><b>Contact</b></p>
+          <div class="cdomain">
+              <div class="cd1">
+                  <div class="lc">
+                      <div class="icon">
+                          <img src="https://th.bing.com/th/id/OIP.iZ2ZlcnV7Kmc75SwdryJ-wHaHa?w=217&h=217&c=7&r=0&o=5&dpr=1.25&pid=1.7" width="80%" height="70px">
+                      </div>
+                      <div class="label">
+                          <p class="l1"><b>Lokasi :</b></p>
+                          <p class="l2">Jl. Bangau No.120AC, Kota Matsum II Kota Medan, Sumatera Utara</p>
+                      </div>
+                  </div>
+                  <div class="lc">
+                      <div class="icon">
+                          <img src="https://th.bing.com/th/id/OIP.h5mY8O0qPjqghp4oPGgV0QHaE3?w=280&h=183&c=7&r=0&o=5&dpr=1.25&pid=1.7" width="80%" height="55px">
+                      </div>
+                      <div class="label">
+                          <p class="l1"><b>Email :</b></p>
+                          <p class="l2">paishop511@gmail.com</p>
+                      </div>
+                  </div>
+                  <div class="lc">
+                      <div class="icon">
+                          <img src="https://th.bing.com/th/id/OIP.DSsl3QTwx8bPnzlDsurqGwHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" width="80%" height="70px">
+                      </div>
+                      <div class="label">
+                          <p class="l1"><b>Telephone :</b></p>
+                          <p class="l2">+6281363038632</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="cd2">
+                  <div class="formbox2">
+                      <form name="dataform" method="post" action="">
+                      <div class="ld">
+                          <div class="lp"><input class="input1" type="text" name="nama" placeholder=" Nama anda"></div>
+                          <div class="lt"><input class="input1" type="text" name="email" placeholder=" Email anda"></div>
+                      </div>
+                      <div class="lk">
+                          <input class="input1" type="text" name="subject" placeholder=" Subject">
+                      </div>
+                      <div class="ld">
+                          <textarea class="are" name="isi" cols="78" rows="10"></textarea>
+                      </div>  
+                  </div>
+                  <div class="kirim">
+                      <button class="button" type="submit">
+                              <a name="contact"></a>Send
+                      </button>
+                  </div>
+                  </form>
+              </div>
+          </div>
+        </div><a name="kontak"></a>
         <div class="footer">
             <p>Copyright &copy; 2022 Rifa'i | All Rights Reserved</p>
         </div>
