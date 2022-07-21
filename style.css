@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar section */
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    justify-content: space-around;
+    padding: 22px 0;
+    color: #e62e00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+.logo{
+    color: rgb(241, 241, 241);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 38%;
+    justify-content: space-between;
+}
+nav ul li a{
+    color: #ffcc00;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover{
+    color: #fff9e3;
+}
+
+/* home section */
+.home{
+    background-image: url(gambar1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-shadow: 0 3px 3px black;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.home h1{
+    padding: 290px 0;
+    color: rgb(255, 255, 222);
+    font-size: 70px;
+    text-align: center;
+}
+/* about section */
+.about{
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #1b1b1b;
+    color:aliceblue;
+    text-align: center;
+    padding: 30px 220px;
+}
+.about h1{
+    font-size: 6vh;
+    padding: 8px 0;
+}
+.about p{
+    font-size: 2.5vh;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    font-family: 'Merriweather', serif;
+    padding: 30px 40px;
+}
+.lower-about{
+    display: flex;
+    height: 350px;
+    margin: 20px;
+}
+.picture{
+    width:62%;
+}
+.col{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.isi{
+    width: 50%;
+    padding: 10px;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+}
+.jadwal{
+    width:38%;
+    padding: 0 70px;
+}
+.jam{
+    height: 10%;
+    font-size: 4vh;
+}
+.tabel{
+    padding: 20px 20px;
+    height: 90%;
+}
+table{
+    color:aliceblue;
+    width: 100%;
+    height: 90%;
+}
+/* Booking section */
+.Booking{
+    padding: 30px 220px;
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #c4a27c;
+    color:#1a1510;
+}
+.Booking h1{
+    font-size: 6vh;
+    padding: 10px 0;
+    text-align: center;
+}
+.Booking hr{
+    margin: 40px 0;
+}
+/* card */
+.grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: start;
+}
+.grid-item {
+    background-color: #1b1b1b;
+    border-radius: 0.4rem;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.grid-item:hover {
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+}
+.card-content {
+    padding: 1.8rem;
+}
+.card-content hr{
+    margin: 10px 0;
+}
+.card h1 {
+    font-size: 3vh;
+    padding: 0;
+    color: #cca300;
+}
+.card h1:hover{
+    color: #fff9e3;
+}
+.card p {
+    font-size: 1rem;
+    color: #cdcdcd;
+}
+/* wrapper */
+.book-contain{
+    display: flex;
+    justify-content: center;
+}
+.book-contain label{
+    padding: 20px;
+    cursor: pointer;
+    background-color: #232323;
+    color: #c4a27c;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+}
+.book-contain label:hover{
+    background-color: #4e4235;
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #c4a27c 1%, #666666 100%) ;
+    transition: all 0.6s ease-in-out;
+}
+#active:checked ~ .wrapper{
+    left: 0;
+}
+.x{
+    padding: 10px;
+}
+.close{
+    cursor: pointer;
+}
+.kosong{
+    display: none;
+}
+/* wrapper form */
+.body-wrapper{
+    padding: 0 500px;
+}
+.formbox{
+    height: 80%;
+    background-color: #FAEEE0;
+    border: 3px black solid;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+.ld{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    display: flex;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 0 8px 0;
+}
+.input1 {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+}  
+.tanggal-input{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+}
+.input2{
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.kotak{
+    padding: 5px 0;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tombol{
+    padding: 35px 0;
+}
+input[type=submit] {
+    background-color: #00cff2;
+    color: rgb(22, 22, 22);
+    padding: 14px 24px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #66e8ff;
+    box-shadow: 0 6px 9px rgba(19, 255, 2, 0.67);
+}
+input[type=reset] {
+    background-color: #f7feff;
+    color: rgb(22, 22, 22);
+    padding: 14px 24px;
+    border: 1px solid #00d9ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+    background-color: #ff1e1e9a;
+    border: 1px solid black;
+    box-shadow: 0 6px 9px rgba(255, 2, 2, 0.363);
+}
+/* footer section */
+.footer{
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+    background-color: rgb(35, 35, 35);
+    color:#cdcdcd;
+    text-align: center;
+}

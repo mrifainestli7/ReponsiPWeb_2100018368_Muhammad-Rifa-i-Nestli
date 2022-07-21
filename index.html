@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Ibarra+Real+Nova:wght@600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <a name="home"></a>
+        <nav>
+            <div class="logo">
+                <h4>Pai</h4>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#book">Booking</a></li>
+                <li><a href="login.html">Login Admin</a></li>
+            </ul>
+        </nav>
+        <div class="Home"><h1>Life Is Better When You<br> Have A Good Hairstyle</h1></div>
+        <a name="about"></a>
+        <div class="about">
+            <h1>About us</h1>
+            <p>PAI Barber Shop mengkhususkan diri dalam potongan klasik, Penataan jenggot, pencukuran dengan handuk panas,
+            dan produk perawatan berkualitas. Tim tukang cukur profesional dan berpengetahuan kami bekerja untuk membantu
+            Anda mencapai penampilan terbaik Anda. Gaya cukur kami sedikit kuno dengan sentuhan modern. Kami telah menciptakan
+            lingkungan yang santai untuk perawatan diri rutin Anda dalam Barber Shop kami.</p>
+            <div class="lower-about">
+                <div class="picture">
+                    <div class="col">
+                        <div class="isi"><img class="photo" src="a1.jpg"></div>
+                        <div class="isi"><img class="photo" src="a2.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="isi"><img class="photo" src="a3.jpg"></div>
+                        <div class="isi"><img class="photo" src="a4.jpg"></div>
+                    </div>
+                </div>
+                <div class="jadwal">
+                    <div class="jam">Jam Buka</div>
+                    <div class="tabel">
+                        <table border="2">
+                        <tr>
+                            <td>Senin</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Selasa</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Rabu</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Kamis</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jum'at</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabtu</td>
+                            <td>10.00 - 22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Minggu</td>
+                            <td>10.00 - 15.00</td>
+                        </tr>
+                        </table></div>
+                </div>
+            </div>
+            <a name="book"></a>
+            <hr width="100%" color="#c19a00">
+        </div>
+        <div class="Booking">
+            <h1>Our Services</h1>
+            <hr width="100%" color="black">
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Cukur Rambut</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                          Rp 100.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Tata Jenggot/Kumis</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                            Rp 80.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Creambath</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                          Rp 60.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Pijat Reflexi</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                          Rp 50.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Pewarnaan Rambut</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                            Rp 110.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1>Smoothing</h1>
+                        <hr width="100%" color="#c19a00">
+                        <p>
+                          Rp 80.000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <hr width="100%" color="black">
+            <div class="book-contain">
+                <label for="active" class="menu-button">Booking  Here</label>
+            </div>
+        </div>
+        <input type="checkbox" id="active" class="kosong">
+        <div class="wrapper">
+            <div class="close-contain">
+                <label for="active" class="close"><img class="x" src="pngwing.com.png"></label>
+            </div>
+            <div class="body-wrapper">
+                <div class="formbox">
+                  <form name="dataform" method="post" action="proses.php">
+                    <div class="text"><b>Nama</b></div>
+                    <div class="lk">
+                        <input class="input1" type="text" name="nama" placeholder=" Nama anda">
+                    </div>
+                    <div class="text"><b>Tanggal</b></div>
+                    <div class="lk">
+                        <input class="input1" type="date" name="tanggal">
+                    </div>
+                    <div class="text"><b>Jam</b></div>
+                    <div class="lk">
+                        <input class="input1" type="time" name="jam">
+                    </div>
+                    <div class="text"><b>Pilihan Layanan</b></div>
+                    <div class="check">
+                        <div class="kotak"><input type="checkbox" name="pil1" value="Cukur Rambut">&nbsp Cukur Rambut</div>
+                        <div class="kotak"><input type="checkbox" name="pil2" value="Tata Jenggot/Kumis">&nbsp Tata Jenggot/Kumis</div>
+                        <div class="kotak"><input type="checkbox" name="pil3" value="Creambath">&nbsp Creambath</div>
+                        <div class="kotak"><input type="checkbox" name="pil4" value="Pijat Reflexi">&nbsp Pijat Reflexi</div>
+                        <div class="kotak"><input type="checkbox" name="pil5" value="Pewarnaan Rambut">&nbsp Pewarnaan Rambut</div>
+                        <div class="kotak"><input type="checkbox" name="pil6" value="Smoothing">&nbsp Smoothing</div>
+                    </div>
+                    <div class="text"><b>Email</b></div>
+                    <div class="lk">
+                        <input class="input1" type="text" name="email">
+                    </div>
+                    <div class="tombol">
+                        <input type="submit" name="Submit" value="Kirim">&emsp;&emsp;
+                        <input type="reset" name="Submit2" value="Batal">
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2022 Rifa'i | All Rights Reserved</p>
+        </div>
+    </body>
+</html>
